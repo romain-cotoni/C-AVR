@@ -30,7 +30,7 @@ void halfStepping(int direction[])
         PORTD = direction[i];	    // single-coil part
         _delay_ms(millisecondes);
         
-        PORTD |= direction[i+1];	// add in half-step
+        PORTD |= direction[i+1];    // add in half-step
         _delay_ms(millisecondes);
     }  
 }
